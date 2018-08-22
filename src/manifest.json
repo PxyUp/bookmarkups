@@ -1,0 +1,24 @@
+{
+  "name": "bookmarkups",
+  "description": "Best application for storage bookmarks",
+  "version": null,
+  "manifest_version": 2,
+  "permissions": [ "tabs" ],
+  "icons": {
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "browser_action": {
+    "default_title": "bookmarkups",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "chrome_style": true
+  }
+}
